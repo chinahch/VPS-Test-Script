@@ -2,9 +2,6 @@
 
 [![Hits](https://hits.spiritlhl.net/ecs.svg?action=hit&title=Hits&title_bg=%23555555&count_bg=%2324dde1&edge_flat=false)](https://hits.spiritlhl.net)
 
-## 语言
-
-[中文文档](README.md) | [English Docs](README_EN.md) | [日本語ドキュメント](README_JP.md)
 
 ## 前言
 
@@ -14,7 +11,6 @@
 - **测试不想要魔改本机配置想要最小化环境变动**
 - **想要测试更全面**
 
-**请尝试 [https://github.com/oneclickvirt/ecs](https://github.com/oneclickvirt/ecs) 进行测试**
 
 ### 兼容性信息
 
@@ -25,7 +21,6 @@
 | **支持架构** | amd64 (x86_64)、arm64、i386、arm |
 | **支持地域** | **能连得上网都支持** |
 
-**注意：** 考虑到多系统多架构的普遍测试的需求，融合怪的Shell版本不再做新功能开发，仅作维护，各项测试已重构为Golang版本 ([https://github.com/oneclickvirt/ecs](https://github.com/oneclickvirt/ecs))，尽量无额外的环境依赖，完全无第三方shell文件引用。
 
 # 目录
 - [前言](#前言)
@@ -52,27 +47,15 @@
 ------
 <a id="artical_1"></a>
 
-# 融合怪测评脚本
-
-## 部分服务器运行测试有各类bug一键修复后再测试
-
-一键修复各种系统原生bug的仓库：
-
-https://github.com/spiritLHLS/one-click-installation-script
-
-如若还有系统bug请到上面仓库的issues反馈，脚本原生BUG该仓库issues反馈
-
 ## 更新
 
 2025.04.12
 
-- 根据 https://github.com/oneclickvirt/backtrace 更新，添加对IPV6路由的线路检测
+- 添加对IPV6路由的线路检测
 - 修复当出现内核错误时，测速不再继续尝试执行
 - 修改测速优先级测速，优先使用go版本重构的测速，避免官方编译的内核版本问题
 - 修复当 /dev/null 不可用时，依然测试IO的问题
 - 修复当子网掩码为128时还进行ipv6的子网掩码长度测试的问题
-
-历史更新日志：[跳转](https://github.com/spiritLHLS/ecs/blob/main/CHANGELOG.md)
 
 ## 融合怪命令
 
@@ -286,18 +269,8 @@ VPS测试，VPS测速，VPS综合性能测试，VPS回程线路测试，VPS流�
 
 感谢 [ipinfo.io](https://ipinfo.io) [ip.sb](https://ip.sb) [cheervision.co](https://cheervision.co) [scamalytics.com](https://scamalytics.com) [abuseipdb.com](https://www.abuseipdb.com/) [virustotal.com](https://www.virustotal.com/) [ip2location.com](https://ip2location.com/) [ip-api.com](https://ip-api.com) [ipregistry.co](https://ipregistry.co/) [ipdata.co](https://ipdata.co/) [ipgeolocation.io](https://ipgeolocation.io) [ipwhois.io](https://ipwhois.io) [ipapi.com](https://ipapi.com/) [ipapi.is](https://ipapi.is/) [ipqualityscore.com](https://www.ipqualityscore.com/) [bigdatacloud.com](https://www.bigdatacloud.com/) 等网站提供的API进行检测，感谢互联网各网站提供的查询资源
 
-感谢所有开源项目提供的原始测试脚本
 
-感谢
-
-<a href="https://h501.io/?from=69" target="_blank">
-  <img src="https://github.com/spiritLHLS/ecs/assets/103393591/dfd47230-2747-4112-be69-b5636b34f07f" alt="h501">
-</a>
-
-提供的免费托管支持本开源项目
-
-同时感谢以下平台提供编辑和测试支持
-
-![PyCharm logo](https://resources.jetbrains.com/storage/products/company/brand/logos/PyCharm.png)
+本项目由 VTEXS 的「开源项目免费 VPS 计划」提供算力支持。
+感谢 VTEXS 对开源社区的支持！
 
 
